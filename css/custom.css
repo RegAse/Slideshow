@@ -1,0 +1,92 @@
+.slideshow{
+	height: auto;
+	width: 80%;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 auto;
+}
+.slideshow img{
+	display: none;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.active{
+	display: block !important;
+}
+.caption{
+	position: absolute;
+	bottom: 5%;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	font-size: 3em;
+}
+.left-content{
+	height: 100%;
+	width: 100px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.right-content{
+	height: 100%;
+	width: 100px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.left-arrow,.right-arrow{
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	border-style: dashed;
+	border-color: transparent;
+  	border-width: 0.53em;
+  	display: -moz-inline-box;
+  	display: inline-block;
+  	/* Use font-size to control the size of the arrow. */
+  	font-size: 170%;
+  	height: 0;
+  	line-height: 0;
+  	position: relative;
+  	vertical-align: middle;
+  	width: 0;
+}
+.right-arrow{
+	cursor: pointer;
+	float: right;
+	top: 50%;
+	border-left-width: 1em;
+	border-left-style: solid;
+	border-left-color: white;
+	left: 0.25em;
+}
+.left-arrow{
+	cursor: pointer;
+	float: left;
+	top: 50%;
+	border-right-width: 1em;
+	border-right-style: solid;
+	border-right-color: white;
+	right: 0.25em;
+}
+body{
+	margin: 0;
+}
+@media (max-width: 650px) {
+  .caption {
+    font-size: 2em;
+	bottom: 0;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+  }
+  .slideshow{
+  	width: 100%;
+  }
+}
